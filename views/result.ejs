@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Search Results</title>
+</head>
+<body>
+        <h3>Search Result for <%= response[0] %> </h3>
+
+        <% for(var i = 0; i < response[1].length; i++) { %>
+            <h4> <%= response[1][i] %> </h4>
+            <p> <%= response[2][i] %> </p>
+            <p><a target="_blank" href="<%= response[3][i] %>"><%= response[3][i] %> </a></p>
+        <% } %>
+</body>
+</html>
